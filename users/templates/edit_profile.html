@@ -35,16 +35,13 @@
 </head>
 <body data-home-page="Информация о пользователе.html" data-home-page-title="Регистрация" data-path-to-root="./"
       data-include-products="true" class="u-body u-xl-mode" data-lang="ru">
-<header class="u-box-shadow u-clearfix u-header u-header" id="sec-07c8" data-animation-name=""
-        data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
-    <div class="u-clearfix u-sheet u-sheet-1">
-        <a href="{%url 'main_page' %}" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="119"
+ <header class="u-box-shadow u-clearfix u-header u-header" id="sec-07c8" data-animation-name=""
+          data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1">
+        <a  class="u-image u-logo u-image-1" data-image-width="500" data-image-height="119"
            title="Главная">
-            <img src="/static/images/BlackIllustrativeSportandFitnessLogo2-no-bg-HDcarve.photos1.png"
-                 class="u-logo-image u-logo-image-1">
-        </a>
-    </div>
-</header>
+      <img src="/static/images/BlackIllustrativeSportandFitnessLogo2-no-bg-HDcarve.photos1.png" class="u-logo-image u-logo-image-1">
+    </a>
+      </div></header>
 <section class="u-clearfix u-palette-2-base u-section-1" id="sec-98f0">
     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="custom-expanded u-align-center u-container-align-center u-container-style u-group u-radius u-shape-round u-white u-group-1">
@@ -72,36 +69,61 @@
                              </div>
 
                                         <div class="u-form-group u-form-select u-form-group-2">
-                                            <label class="u-label u-text-grey-80 u-label-1">Пол</label>
-                                            <div class="u-form-select-wrapper">
-                                                {{ form.gender }}
+                                            <label for = "id_gender"class="u-label u-text-grey-80 u-label-1">Пол</label>
+                                            <div class="u-form-radio-button-wrapper">
+                                                <select name="gender" id="id_gender" class="u-input u-input-rectangle u-radius u-text-grey-80 u-input-1"
+                                                required="required">
+                                                    {% for choice in form.gender.field.choices %}
+                                                        <option value="{{ choice.0 }}" {% if choice.0 == form.gender.value %}selected{% endif %}>
+                                                            {{ choice.1 }}
+                                                        </option>
+                                                    {% endfor %}
+                                                </select>
                                             </div>
                                         </div>
+
                                         <div class="u-form-date u-form-group u-form-group-3">
-                                            <label class="u-label u-text-grey-80 u-label-2">Дата рождения</label>
-                                            {{ form.date_of_birth }}
+                                            <label for="id_date_of_birth" class="u-label u-text-grey-80 u-label-2">Дата рождения</label>
+                                            <input type="date" id="id_date_of_birth" name="date_of_birth"
+                                            class="u-input u-input-rectangle u-radius u-text-grey-80 u-input-2"
+                                           data-date-format="yyyy-mm-dd" placeholder="ГГГГ-ММ-ДД" required="required" value="{{ form.username.value|default:'' }}">
                                         </div>
+
                                         <div class="u-form-group u-form-select u-form-group-7">
-                                            <label class="u-label u-text-grey-80 u-label-6">Насколько вы активны?</label>
-                                            {{ form.activity_type }}
+                                            <label for="id_activity_type" class="u-label u-text-grey-80 u-label-6">Насколько вы активны?</label>
+                                            <div class="u-form-radio-button-wrapper">
+                                                <select name="activity_type" id="id_activity_type" class="u-input u-input-rectangle u-radius u-text-grey-80 u-input-6"
+                                                required="required">
+                                                    {% for choice in form.activity_type.field.choices %}
+                                                        <option value="{{ choice.0 }}" {% if choice.0 == form.activity_type.value %}selected{% endif %}>
+                                                            {{ choice.1 }}
+                                                        </option>
+                                                    {% endfor %}
+                                                </select>
+                                            </div>
                                         </div>
+
                                         <div class="u-form-group u-form-group-4">
-                                            <label class="u-label u-text-grey-80 u-label-3">Рост</label>
-                                                {{ form.height }}
+                                            <label for="id_height" class="u-label u-text-grey-80 u-label-3">Рост</label>
+                                            <input type="text" placeholder="Введите ваш текущий рост" name="height" id="id_height" class="u-input u-input-rectangle u-radius u-text-grey-80 u-input-3"
+                                            value="{{ form.height.value|default:'' }}">
+
                                         </div>
                                         <div class="u-form-group u-form-group-5">
-                                            <label class="u-label u-text-grey-80 u-label-4">Вес</label>
-                                                {{ form.weight }}
+                                            <label for="id_weight" class="u-label u-text-grey-80 u-label-4">Вес</label>
+                                            <input type="text" placeholder="Введите ваш текущий вес" name="weight" id="id_weight" class="u-input u-input-rectangle u-radius u-text-grey-80 u-input-4"
+                                            value="{{ form.weight.value|default:'' }}">
                                         </div>
+
                                         <div class="u-form-group u-form-group-6">
-                                            <label class="u-label u-text-grey-80 u-label-5">Желаемый вес</label>
-                                                {{ form.desired_weight }}
+                                            <label for="id_desired_weight" class="u-label u-text-grey-80 u-label-5">Желаемый вес</label>
+                                            <input type="text" placeholder="Введите ваш желаемый вес" name="desired_weight" id="id_desired_weight" class="u-input u-input-rectangle u-radius u-text-grey-80 u-input-5"
+                                            value="{{ form.desired_weight.value|default:'' }}">
                                         </div>
 
 
                                         <div class="u-align-center u-form-group u-form-submit">
                                              <button class="u-active-grey-70 u-border-none u-btn u-btn-round u-btn-step u-btn-step-prev u-button-style u-grey-80 u-hover-grey-75 u-radius u-btn-1" type="button" onclick="nextStep()" >Дальше</button>
-<!--                                             <input type="submit" value="submit" id="submit-btn" class="u-form-control-hidden">-->
                                          </div>
                             </div>
                         </div>
@@ -111,12 +133,30 @@
                      data-interval="0" data-u-ride="false">
                                 <p class="u-align-center u-form-group u-form-text u-text u-text-grey-80 u-text-2">Информация о вас</p>
                                     <div class="u-form-group u-form-radiobutton u-form-group-10">
-                                        <label class="u-label u-text-grey-80 u-label-8"> Вы хотите придерживаться какого-то определенного типа питания?</label>
-                                        {{ form.type_food }}
+                                        <label for="id_type_food" class="u-label u-text-grey-80 u-label-8"> Вы хотите придерживаться какого-то определенного типа питания?</label>
+                                        <div class="u-form-radio-button-wrapper">
+                                                <select name="type_food" id="id_type_food" class="u-input u-input-rectangle u-radius u-text-grey-80 u-input-6"
+                                                required="required">
+                                                    {% for choice in form.type_food.field.choices %}
+                                                        <option value="{{ choice.0 }}" {% if choice.0 == form.type_food.value %}selected{% endif %}>
+                                                            {{ choice.1 }}
+                                                        </option>
+                                                    {% endfor %}
+                                                </select>
+                                            </div>
                                     </div>
                                     <div class="u-form-group u-form-select u-form-group-9">
                                         <label class="u-label u-text-grey-80 u-label-7">Какова ваша главная цель?</label>
-                                        {{ form.main_goal }}
+                                        <div class="u-form-radio-button-wrapper">
+                                                <select name="main_goal" id="id_main_goal" class="u-input u-input-rectangle u-radius u-text-grey-80 u-input-7"
+                                                required="required">
+                                                    {% for choice in form.main_goal.field.choices %}
+                                                        <option value="{{ choice.0 }}" {% if choice.0 == form.main_goal.value %}selected{% endif %}>
+                                                            {{ choice.1 }}
+                                                        </option>
+                                                    {% endfor %}
+                                                </select>
+                                            </div>
                                     </div>
                                     <div class="u-form-checkbox-group u-form-group u-form-group-11">
                                         <label class="u-label u-text-grey-80 u-label-9" >У вас есть еще какие-то цели?</label>
@@ -131,14 +171,6 @@
 
                                 <button class="u-active-grey-70 u-border-none u-btn u-btn-round u-btn-submit u-button-style u-grey-80 u-hover-grey-75 u-radius u-btn-1">Отправить</button>
                             <input type="submit"  id="submit-button" value="submit" class="u-form-control-hidden" wfd-invisible="true">
-<!--                                <div class="u-align-center u-form-group u-form-submit">-->
-<!--                                    <button type="button" onclick="prevStep()" class="u-active-grey-70 u-border-none u-btn u-btn-round u-btn-submit u-button-style u-grey-80 u-hover-grey-75 u-radius u-hidden u-btn-1">Назад</button>-->
-<!--&lt;!&ndash;                                                        <input type="submit" value="submit" id="submit-btn2" class="u-form-control-hidden">&ndash;&gt;-->
-<!--                                </div>-->
-<!--                                <div class="u-align-center u-form-group u-form-submit">-->
-<!--                                    <button  type="button" class="u-active-grey-70 u-border-none u-btn u-btn-round u-btn-submit u-button-style u-grey-80 u-hover-grey-75 u-radius u-hidden u-btn-1">Отправить</button>-->
-<!--&lt;!&ndash;                                                        <input type="submit" value="submit" id="submit-btn3" class="u-form-control-hidden">&ndash;&gt;-->
-<!--                                </div>-->
                                  </div>
                         </div>
                     </form>

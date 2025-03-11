@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="/static/css/nicepage.css" media="screen">
     <link rel="stylesheet" href="/static/css/Авторизация.css" media="screen">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!--    <script class="u-script" type="text/javascript" src="/static/jquery.js" defer=""></script>-->
-<!--    <script class="u-script" type="text/javascript" src="/static/nicepage.js" defer=""></script>-->
+
     <meta name="generator" content="Nicepage 7.0.3, nicepage.com">
     <meta name="referrer" content="origin">
     <link id="u-theme-google-font" rel="stylesheet"
@@ -35,16 +34,13 @@
 </head>
 <body data-home-page="Авторизация.html" data-home-page-title="Авторизация" data-path-to-root="./"
       data-include-products="true" class="u-body u-xl-mode" data-lang="ru">
-<header class="u-box-shadow u-clearfix u-header u-header" id="sec-07c8" data-animation-name=""
-        data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
-    <div class="u-clearfix u-sheet u-sheet-1">
-        <a href="index.html" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="119"
+ <header class="u-box-shadow u-clearfix u-header u-header" id="sec-07c8" data-animation-name=""
+          data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="{%url 'main_page' %}" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="119"
            title="Главная">
-            <img src="images/BlackIllustrativeSportandFitnessLogo2-no-bg-HDcarve.photos1.png"
-                 class="u-logo-image u-logo-image-1">
-        </a>
-    </div>
-</header>
+      <img src="/static/images/BlackIllustrativeSportandFitnessLogo2-no-bg-HDcarve.photos1.png" class="u-logo-image u-logo-image-1">
+    </a>
+      </div></header>
 <section class="u-clearfix u-palette-2-base u-section-1" id="sec-98f0">
     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-radius u-shape-round u-white u-group-1">
@@ -53,17 +49,34 @@
                 <div class="u-form u-form-1">
                     <form method="POST" id="login-form"
                           class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form"
-                           style="padding: 10px;"
+                           style="padding: 0px;"
                     action="{% url 'login' %}">
                         {% csrf_token %}
 
-                             {{ form.email }}
-                        {{ form.password }}
-                        {% if form.errors %}
-                                <div class="alert alert-danger">
-                                    {{ form.errors }}
+                        <div class="u-form-group">
+                            <label for="id_username" class="u-label u-label-1">Email</label>
+                            <input type="email" placeholder="Электронная почта" name="username" id="id_username" class="u-grey-5 u-input u-input-rectangle u-radius u-input-2" value="{{ form.username.value|default:'' }}">
+                            {% if form.username.errors %}
+                                <div class="text-danger">
+                                    {% for error in form.username.errors %}
+                                        {{ error }}
+                                    {% endfor %}
                                 </div>
                             {% endif %}
+                        </div>
+
+                        <!-- Поле для пароля -->
+                        <div class="u-form-group u-form-group-2">
+                            <label for="id_password" class="u-label u-label-2">Пароль</label>
+                            <input type="password" placeholder="Пароль" name="password" id="id_password" class="u-grey-5 u-input u-input-rectangle u-radius u-input-2">
+                            {% if form.password.errors %}
+                                <div class="text-danger">
+                                    {% for error in form.password.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
 
                         <div class="u-align-center u-form-group u-form-submit">
                             <button class="u-active-grey-70 u-border-none u-btn u-btn-round u-btn-submit u-button-style u-grey-80 u-hover-grey-75 u-radius u-btn-1">Войти</button>

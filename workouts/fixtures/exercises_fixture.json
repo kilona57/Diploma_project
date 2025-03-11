@@ -1,0 +1,98 @@
+[
+    {
+        "model": "workouts.exercise",
+        "pk": 1,
+        "fields": {
+            "name": "Классические отжимания",
+            "description": "Самое распространенное упражнение на грудь в домашних условиях. Работают грудь и трицепс. ",
+            "difficulty": 2,
+            "calories_burned": 80,
+            "muscle_group": 3,
+            "equipment": 4
+        }
+    },
+        {
+        "model": "workouts.exercise",
+        "pk": 2,
+        "fields": {
+            "name": "Классические отжимания с колен",
+            "description": "Если не хватает сил для полноценных отжиманий, то можно отжиматься с колен.",
+            "difficulty": 1,
+            "calories_burned": 80,
+            "muscle_group": 3,
+            "equipment": 4
+        }
+    },
+    {
+        "model": "workouts.exercise",
+        "pk": 3,
+        "fields": {
+            "name": "Отжимания от стульев",
+            "description": "Упражнение на грудь с использованием стульев для увеличения амплитуды движения.",
+            "difficulty": 3,
+            "calories_burned": 90,
+            "muscle_group": 3,
+            "equipment": 4
+        }
+    },
+    {
+        "model": "workouts.exercise",
+        "pk": 4,
+        "fields": {
+            "name": "Отжимания ноги на возвышенности",
+            "description": "Упражнение на грудь с ногами на возвышенности для увеличения нагрузки на верхнюю часть грудных мышц.",
+            "difficulty": 3,
+            "calories_burned": 100,
+            "muscle_group": 3,
+            "equipment": 4
+        }
+    },
+    {
+        "model": "workouts.exercise",
+        "pk": 5,
+        "fields": {
+            "name": "Отжимания узким хватом",
+            "description": "Упражнение, в котором больше работает трицепс, но также задействуется грудь.",
+            "difficulty": 2,
+            "calories_burned": 70,
+            "muscle_group": 3,
+            "equipment": 4
+        }
+    },
+    {
+        "model": "workouts.exercise",
+        "pk": 6,
+        "fields": {
+            "name": "Отжимания лучника",
+            "description": "Упражнение, которое включает в работу множество второстепенных мышц и иначе распределяет нагрузку.",
+            "difficulty": 4,
+            "calories_burned": 110,
+            "muscle_group": 3,
+            "equipment": 4
+        }
+    },
+    {
+        "model": "workouts.exercise",
+        "pk": 7,
+        "fields": {
+            "name": "Отжимания с подносом колена",
+            "description": "Упражнение, направленное на развитие грудных мышц, трицепсов и передних дельт. Также задействует мышцы кора для стабилизации тела. Поднос колена в нижней точке усиливает нагрузку на мышцы груди и улучшает координацию.",
+            "difficulty": 2,
+            "calories_burned": 90,
+            "muscle_group": 3,
+            "equipment": 4
+        }
+    },
+    {
+        "model": "workouts.exercise",
+        "pk": 8,
+        "fields": {
+            "name": "Кик отжимания",
+            "description": "Упражнение, которое включает в работу ноги и пресс, но также задействует грудные мышцы.",
+            "difficulty": 4,
+            "calories_burned": 120,
+            "muscle_group": 3,
+            "equipment": 4
+        }
+    }
+]

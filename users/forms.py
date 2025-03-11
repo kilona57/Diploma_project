@@ -1,8 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from django.contrib.auth import authenticate
 from django.core.exceptions import ValidationError
-from .models import CustomUser, UserProfile, Gender, ActivityType, TypeFood, MainGoal, AdditionalGoal
+from .models import CustomUser, UserProfile, Gender, ActivityType, TypeFood, MainGoal, AdditionalGoal, BodyParameters, NutritionGoals
 from datetime import date
 
 
@@ -10,34 +9,10 @@ class RegisterForm(UserCreationForm):
     error_messages = {
         'password_mismatch': 'Пароли не совпадают.',  # Переопределяем сообщение об ошибке
     }
-    first_name = forms.CharField(required=True, label='Имя',
-                                 widget=forms.EmailInput(attrs={
-                                     'class': 'u-grey-5 u-input u-input-rectangle u-radius u-input-1',
-                                     'placeholder': 'Полное имя',
-                                     'type': 'name'
-                                 }))
-    email = forms.EmailField(required=True, label='Email',
-                             widget=forms.EmailInput(attrs={
-                                 'class': 'u-grey-5 u-input u-input-rectangle u-radius u-input-1',
-                                 'placeholder': 'Электронная почта',
-                                 'type': 'email'
-                             }))
-    password1 = forms.CharField(
-        label='Пароль',
-        widget=forms.PasswordInput(attrs={
-            'class': 'u-grey-5 u-input u-input-rectangle u-radius u-input-1',
-            'placeholder': 'Пароль',
-            'type': 'password'
-        })
-    )
-    password2 = forms.CharField(
-        label='Подтверждение пароля',
-        widget=forms.PasswordInput(attrs={
-            'class': 'u-grey-5 u-input u-input-rectangle u-radius u-input-1',
-            'placeholder': 'Подтверждение пароля',
-            'type': 'password'
-        })
-    )
+    first_name = forms.CharField(required=True)
+    email = forms.EmailField(required=True)
+    password1 = forms.CharField()
+    password2 = forms.CharField()
 
     class Meta:
         model = CustomUser
@@ -64,63 +39,39 @@ class UserProfileForm(forms.ModelForm):
     gender = forms.ModelChoiceField(required=True,
                                     queryset=Gender.objects.all(),
                                     initial=Gender.objects.get(code='M'),
-                                    widget=forms.Select(attrs={
-                                        'class': 'u-input u-input-rectangle u-radius u-text-grey-80 u-input-1',
-                                        'type': 'gender'}),
                                     label='Пол')
 
     date_of_birth = forms.DateField(required=True,
-                                    widget=forms.DateInput(attrs={
-                                        'class': 'u-input u-input-rectangle u-radius u-text-grey-80 u-input-2',
-                                        'type': 'date',
-                                        'placeholder': 'ДД-ММ-ГГГГ'}),
+                                    widget=forms.DateInput(),
                                     label='Дата рождения')
     height = forms.FloatField(required=True,
-                              widget=forms.NumberInput(attrs={
-                                  'class': 'u-input u-input-rectangle u-radius u-text-grey-80 u-input-3',
-                                  'placeholder': 'Введите ваш рост',
-                                  'type': 'text'}),
+                              widget=forms.NumberInput(),
                               label='Рост')
     weight = forms.FloatField(required=True,
-                              widget=forms.NumberInput(attrs={
-                                  'class': 'u-input u-input-rectangle u-radius u-text-grey-80 u-input-4',
-                                  'placeholder': 'Введите ваш текущий вес',
-                                  'type': 'text'}),
+                              widget=forms.NumberInput(),
                               label='Текущий вес')
     desired_weight = forms.FloatField(required=True,
-                                      widget=forms.NumberInput(attrs={
-                                          'class': 'u-input u-input-rectangle u-radius u-text-grey-80 u-input-5',
-                                          'placeholder': 'Введите ваш желаемый вес',
-                                          'type': 'text'
-                                      }),
+                                      widget=forms.NumberInput(),
                                       label='Желаемый вес')
     activity_type = forms.ModelChoiceField(required=True,
                                            queryset=ActivityType.objects.all(),
                                            initial=ActivityType.objects.get(name="Слегка активный"),
-                                           widget=forms.Select(attrs={
-                                               'class': 'u-input u-input-rectangle u-radius u-text-grey-80 u-input-6'
-                                           }),
+                                           widget=forms.Select(),
                                            label='Насколько вы активны?')
     type_food = forms.ModelChoiceField(required=True,
                                        queryset=TypeFood.objects.all(),
                                        initial=TypeFood.objects.get(name="Классический"),
-                                       widget=forms.Select(attrs={
-                                           'class': 'u-input u-input-rectangle u-radius u-text-grey-80 u-input-6'
-                                       }),
+                                       widget=forms.Select(),
                                        label='Вы хотите придерживаться какого-то определенного типа питания?')
     main_goal = forms.ModelChoiceField(required=True,
                                        queryset=MainGoal.objects.all(),
                                        initial=MainGoal.objects.get(name="Похудение"),
-                                       widget=forms.Select(attrs={
-                                           'class': 'u-input u-input-rectangle u-radius u-text-grey-80 u-input-7'
-                                       }),
+                                       widget=forms.Select(),
                                        label='Какова ваша главная цель?')
     additional_goal = forms.ModelMultipleChoiceField(required=True,
                                              queryset=AdditionalGoal.objects.all(),
                                              initial=AdditionalGoal.objects.get(name="Улучшить взаимоотношения с едой"),
-                                             widget=forms.CheckboxSelectMultiple(attrs={
-                                                 # 'class': 'u-active-palette-2-base u-field-input u-hover-palette-2-light-1 u-palette-2-base u-radius'
-                                             }),
+                                             widget=forms.CheckboxSelectMultiple(),
                                              label='У вас есть еще какие-то цели?')
 
     class Meta:
@@ -137,22 +88,33 @@ class UserProfileForm(forms.ModelForm):
         return date_of_birth
 
 
-class LoginForm(AuthenticationForm):
-    email = forms.EmailField(widget=forms.EmailInput(attrs={'autofocus': True}), label='Email')
-    password = forms.CharField(widget=forms.PasswordInput, label='Password')
+class EmailAuthenticationForm(AuthenticationForm):
+    username = forms.EmailField(label="Email")  # Переопределяем поле username на email
+
+
+class BodyParametersForm(forms.ModelForm):
+    bmi = forms.NumberInput()
+    weight = forms.FloatField(required=True, widget=forms.NumberInput(), label='Вес (кг)')
+    desired_weight = forms.FloatField(required=True, widget=forms.NumberInput(), label='Желаемый вес (кг)')
+    chest = forms.NumberInput()
+    waist = forms.NumberInput()
+    hips = forms.NumberInput()
+    thigh = forms.NumberInput()
+    biceps = forms.NumberInput()
 
     class Meta:
-        model = CustomUser
-        fields = ['email', 'password']
+        model = BodyParameters
+        fields = ['weight', 'desired_weight', 'chest', 'waist', 'hips', 'thigh', 'biceps']
 
-    def clean(self):
-        email = self.cleaned_data.get('email')
-        password = self.cleaned_data.get('password')
 
-        if email and password:
-            user = authenticate(request=self.request, email=email, password=password)
-            if user is None:
-                raise forms.ValidationError('Неверный email или пароль.')
-            return self.cleaned_data
-
+class NutritionGoalsForm(forms.ModelForm):
+    class Meta:
+        model = NutritionGoals
+        fields = ['target_kcal', 'target_protein', 'target_fat', 'target_carb']
+        labels = {
+            'target_kcal': 'Целевые калории (ккал)',
+            'target_protein': 'Целевые белки (г)',
+            'target_fat': 'Целевые жиры (г)',
+            'target_carb': 'Целевые углеводы (г)',
+        }
 

@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'users'
+    'users',
+    'workouts'
 ]
 
 MIDDLEWARE = [
@@ -135,3 +136,4 @@ AUTH_USER_MODEL = 'users.CustomUser'
 LOGIN_URL = '/login/'  # URL для перенаправления неаутентифицированных пользователей
 LOGIN_REDIRECT_URL = '/edit_profile/'
 LOGOUT_REDIRECT_URL = '/'
+

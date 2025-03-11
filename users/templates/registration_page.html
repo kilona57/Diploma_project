@@ -14,21 +14,6 @@
     <meta name="generator" content="Nicepage 7.0.3, nicepage.com">
     <meta name="referrer" content="origin">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-
-
-
-
-
-<!--    <script type="application/ld+json">{-->
-<!--        "@context": "http://schema.org",-->
-<!--        "@type": "Organization",-->
-<!--        "name": "",-->
-<!--        "logo": "images/BlackIllustrativeSportandFitnessLogo2-no-bg-HDcarve.photos1.png",-->
-<!--        "sameAs": [-->
-<!--            "#",-->
-<!--            "#"-->
-<!--        ]-->
-<!--    }</script>-->
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Регистрация">
     <meta property="og:type" content="website">
@@ -40,7 +25,7 @@
         data-include-products="true" class="u-body u-xl-mode" data-lang="ru">
   <header class="u-box-shadow u-clearfix u-header u-header" id="sec-07c8" data-animation-name=""
           data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1">
-        <a href="{%url 'main_page' %}" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="119"
+        <a  class="u-image u-logo u-image-1" data-image-width="500" data-image-height="119"
            title="Главная">
       <img src="/static/images/BlackIllustrativeSportandFitnessLogo2-no-bg-HDcarve.photos1.png" class="u-logo-image u-logo-image-1">
     </a>
@@ -54,37 +39,31 @@
           <div class="u-form u-form-1">
 
             <!-- Форма -->
-<form method="POST" id="registration-form" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 0px;" action="{% url 'register' %}">
+<form method="POST" id="registration-form"
+      class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form"
+      style="padding: 0px;" action="{% url 'register' %}">
               {% csrf_token %}
-                {{ form.first_name }}
-                {{ form.email }}
-                {{ form.password1 }}
-                {{ form.password2 }}
+                <div class="u-form-group u-form-group">
+                  <label for="id_first_name"class="u-label u-label-1">Имя</label>
+                  <input type="name" placeholder="Полное имя" id="id_first_name" name="first_name" class="u-grey-5 u-input u-input-rectangle u-radius u-input-1" required="required" value="{{ form.first_name.value|default:'' }}">
+                </div>
 
-<!--                    {{ form.as_p }}-->
-<!--              &lt;!&ndash; Отображение общих ошибок формы &ndash;&gt;-->
-<!--              {% if form.non_field_errors %}-->
-<!--                <div class="error">-->
-<!--                  {% for error in form.non_field_errors %}-->
-<!--                    <p>{{ error }}</p>-->
-<!--                  {% endfor %}-->
-<!--                </div>-->
-<!--              {% endif %}-->
+                <div class="u-form-email u-form-group u-form-group-2">
+                  <label for="id_email" class="u-label u-label-2" wfd-invisible="true">Email</label>
+                  <input type="email" placeholder="Электронная почта" id="id_email" name="email" class="u-grey-5 u-input u-input-rectangle u-radius u-input-2" required="required"
+                         value="{{ form.email.value|default:'' }}">
+                </div>
 
-<!--              &lt;!&ndash; Отображение ошибок для каждого поля &ndash;&gt;-->
-<!--              {% for field in form %}-->
-<!--                <div class="u-form-group u-form-group">-->
-<!--                  {{ field.label_tag }}-->
-<!--                  {{ field }}-->
-<!--                  {% if field.errors %}-->
-<!--                    <div class="error">-->
-<!--                      {% for error in field.errors %}-->
-<!--                        <p>{{ error }}</p>-->
-<!--                      {% endfor %}-->
-<!--                    </div>-->
-<!--                  {% endif %}-->
-<!--                </div>-->
-<!--              {% endfor %}-->
+                <div class="u-form-group u-form-group-3">
+                  <label for="id_password1" class="u-label u-label-3">Пароль</label>
+                  <input  type="password"  placeholder="Пароль" id="id_password1" name="password1" class="u-grey-5 u-input u-input-rectangle u-radius u-input-3" value="{{ form.password1.value|default:'' }}">
+                </div>
+
+                <div class="u-form-group u-form-group-4">
+                  <label for="id_password2" class="u-label u-label-4">Подтверждение пароля</label>
+                  <input type="password" placeholder="Подтверждение пароля" rows="4" cols="50" id="id_password2" name="password2" class="u-grey-5 u-input u-input-rectangle u-radius u-input-4" required="required" type="password" value="{{ form.password2.value|default:'' }}">
+                </div>
+
               <div class="u-align-center u-form-group u-form-submit">
               <!-- Кнопка отправки -->
               <button class="u-active-grey-70 u-border-none u-btn u-btn-round u-btn-submit u-button-style u-grey-80 u-hover-grey-75 u-radius u-btn-1">Создать аккаунт</button>

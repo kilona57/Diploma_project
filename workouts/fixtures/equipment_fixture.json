@@ -1,0 +1,58 @@
+[
+    {
+        "model": "workouts.equipment",
+        "pk": 1,
+        "fields": {
+            "name": "Штанга"
+        }
+    },
+    {
+        "model": "workouts.equipment",
+        "pk": 2,
+        "fields": {
+            "name": "Гантели"
+        }
+    },
+    {
+        "model": "workouts.equipment",
+        "pk": 3,
+        "fields": {
+            "name": "Брусья"
+        }
+    },
+    {
+        "model": "workouts.equipment",
+        "pk": 4,
+        "fields": {
+            "name": "Собственный вес"
+        }
+    },
+    {
+        "model": "workouts.equipment",
+        "pk": 5,
+        "fields": {
+            "name": "Турник"
+        }
+    },
+    {
+        "model": "workouts.equipment",
+        "pk": 6,
+        "fields": {
+            "name": "Фитнес-резинка"
+        }
+    },
+    {
+        "model": "workouts.equipment",
+        "pk": 7,
+        "fields": {
+            "name": "Резиновые петли"
+        }
+    },
+    {
+        "model": "workouts.equipment",
+        "pk": 8,
+        "fields": {
+            "name": "TRX"
+        }
+    }
+]
