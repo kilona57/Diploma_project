@@ -4,7 +4,7 @@
         "pk": 1,
         "fields": {
             "exercise": 1,
-            "gif_name": "Классические отжимания.gif"
+            "gif_name": "Классические_отжимания_(сб.вес).gif"
         }
     },
     {
@@ -12,7 +12,7 @@
         "pk": 2,
         "fields": {
             "exercise": 2,
-            "gif_name": "Отжимания с колен.gif"
+            "gif_name": "Классические_отжимания_с_колен_(сб.вес).gif"
         }
     },
     {
@@ -20,7 +20,7 @@
         "pk": 3,
         "fields": {
             "exercise": 3,
-            "gif_name": "Отжимания от стульев.gif"
+            "gif_name": "Отжимания_от_стульев_(сб.вес).gif"
         }
     },
     {
@@ -28,7 +28,7 @@
         "pk": 4,
         "fields": {
             "exercise": 3,
-            "gif_name": "Отжимания от стульев осложнение 2.gif"
+            "gif_name": "Отжимания_от_стульев_(осложнение)_(сб.вес).gif"
         }
     },
     {
@@ -36,7 +36,7 @@
         "pk": 5,
         "fields": {
             "exercise": 4,
-            "gif_name": "Отжимания ноги на возвышенности.gif"
+            "gif_name": "Отжимания_ноги_на_возвышенности_(сб.вес).gif"
         }
     },
     {
@@ -44,7 +44,7 @@
         "pk": 6,
         "fields": {
             "exercise": 5,
-            "gif_name": "Отжимания с узким хватом.gif"
+            "gif_name": "Отжимания_с_узким_хватом_(сб.вес).gif"
         }
     },
     {
@@ -52,7 +52,7 @@
         "pk": 7,
         "fields": {
             "exercise": 6,
-            "gif_name": "Отжимания лучника.gif"
+            "gif_name": "Отжимания_лучника_(сб.вес).gif"
         }
     },
     {
@@ -60,7 +60,7 @@
         "pk": 8,
         "fields": {
             "exercise": 7,
-            "gif_name": "Отжимания с подносом колена.gif"
+            "gif_name": "Отжимания_с_подносом_колена_(сб.вес).gif"
         }
     },
     {
@@ -68,7 +68,1911 @@
         "pk": 9,
         "fields": {
             "exercise": 8,
-            "gif_name": "Кик отжимания.gif"
+            "gif_name": "Кик_отжимания_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 10,
+        "fields": {
+            "exercise": 9,
+            "gif_name": "Жим_лёжа_(общая_грудь)_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 11,
+        "fields": {
+            "exercise": 10,
+            "gif_name": "Жим_под_положительным_углом_(верх_груди)_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 12,
+        "fields": {
+            "exercise": 11,
+            "gif_name": "Жим_под_отрицательным_углом_(низ_грудных_мышц)_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 13,
+        "fields": {
+            "exercise": 12,
+            "gif_name": "Разведение_лежа_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 14,
+        "fields": {
+            "exercise": 13,
+            "gif_name": "Разведение_лежа_под_положительным_углом_(верх_груди)_(генатели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 15,
+        "fields": {
+            "exercise": 14,
+            "gif_name": "Разведение_лежа_под_отрицательным_углом_(низ_грудных_мышц)_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 16,
+        "fields": {
+            "exercise": 15,
+            "gif_name": "Пуловер_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 17,
+        "fields": {
+            "exercise": 16,
+            "gif_name": "Жим_лежа_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 18,
+        "fields": {
+            "exercise": 17,
+            "gif_name": "Жим_лежа_под_положительным_углом_(верх_грудных_мышц)_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 19,
+        "fields": {
+            "exercise": 18,
+            "gif_name": "Жим_лежа_под_отрицательным_углом_(низ_грудных_мышц)_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 20,
+        "fields": {
+            "exercise": 19,
+            "gif_name": "Отжимание_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 21,
+        "fields": {
+            "exercise": 20,
+            "gif_name": "Отжимания_(брусья).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 22,
+        "fields": {
+            "exercise": 21,
+            "gif_name": "Жим_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 23,
+        "fields": {
+            "exercise": 22,
+            "gif_name": "Жим__лежа_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 24,
+        "fields": {
+            "exercise": 23,
+            "gif_name": "Жим_в_машине_Смитта_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 25,
+        "fields": {
+            "exercise": 24,
+            "gif_name": "Сведения_в_кроссовере_(верх_груди)_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 26,
+        "fields": {
+            "exercise": 25,
+            "gif_name": "Сведения_в_кроссовере_(низ_груди)_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 27,
+        "fields": {
+            "exercise": 26,
+            "gif_name": "Классические_сведения_в_кроссовере_(низ_грудных_мыщц)_(тренажер).gif"
+        }
+    },
+        {
+        "model": "workouts.exercisegif",
+        "pk": 28,
+        "fields": {
+            "exercise": 27,
+            "gif_name": "Гиперэкстензия_лежа_(поясничные_мышцы)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 29,
+        "fields": {
+            "exercise": 28,
+            "gif_name": "Повороты_корпуса_(поясничные + частично широчайшие мышцы)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 30,
+        "fields": {
+            "exercise": 29,
+            "gif_name": "«Пловец»_без_участия_ног_(поясничные, широчайшие)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 31,
+        "fields": {
+            "exercise": 30,
+            "gif_name": "Приведение_локтей_лежа_(поясничные, широчайшие)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 32,
+        "fields": {
+            "exercise": 31,
+            "gif_name": "Тяга_в_наклоне_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 33,
+        "fields": {
+            "exercise": 32,
+            "gif_name": "Тяга_в_упоре_(без_нагрузки_на_поясницу)_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 34,
+        "fields": {
+            "exercise": 33,
+            "gif_name": "Тяга_одной_рукой_поочередно_(без_нагрузки_на_поясницу)_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 35,
+        "fields": {
+            "exercise": 34,
+            "gif_name": "Шраги_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 36,
+        "fields": {
+            "exercise": 35,
+            "gif_name": "Мертвая_тяга_(поясничные мышц, ягодицы)_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 37,
+        "fields": {
+            "exercise": 36,
+            "gif_name": "Тяга_в_наклоне_(широчайшие_мышцы)_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 38,
+        "fields": {
+            "exercise": 37,
+            "gif_name": "Тяга_в_наклоне_обратным_хватом_(широчайшие)_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 39,
+        "fields": {
+            "exercise": 38,
+            "gif_name": "Классическая_становая_тяга (низ_спины_и_ноги)_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 40,
+        "fields": {
+            "exercise": 39,
+            "gif_name": "Становая_тяга_«сумо»_(низ спины, ноги)_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 41,
+        "fields": {
+            "exercise": 40,
+            "gif_name": "Наклоны_(поясничные_мышцы)_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 42,
+        "fields": {
+            "exercise": 41,
+            "gif_name": "Шраги_(верх_спины)_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 43,
+        "fields": {
+            "exercise": 42,
+            "gif_name": "Подтягивания_широким_хватом_(турник).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 44,
+        "fields": {
+            "exercise": 43,
+            "gif_name": "Подтягивания_параллельным_хватом_(больше_нагрузка_на_руки)_(турник).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 45,
+        "fields": {
+            "exercise": 44,
+            "gif_name": "Подтягивания_обратным_хватом_(больше_нагрузка_на_руки)_(турник).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 46,
+        "fields": {
+            "exercise": 45,
+            "gif_name": "Тяга_в_наклоне_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 47,
+        "fields": {
+            "exercise": 46,
+            "gif_name": "Тяга_в_наклоне_одной_рукой_поочередно_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 48,
+        "fields": {
+            "exercise": 47,
+            "gif_name": "Наклоны_вперед_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 49,
+        "fields": {
+            "exercise": 48,
+            "gif_name": "Шраги(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 50,
+        "fields": {
+            "exercise": 49,
+            "gif_name": "Подтягивания_(trx).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 51,
+        "fields": {
+            "exercise": 50,
+            "gif_name": "Подтягивания_узким-хватом_(trx).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 52,
+        "fields": {
+            "exercise": 51,
+            "gif_name": "Горизонтальная_тяга_(trx).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 53,
+        "fields": {
+            "exercise": 51,
+            "gif_name": "Горизонтальная_тяга_2_(trx).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 54,
+        "fields": {
+            "exercise": 52,
+            "gif_name": "Гиперэкстензия_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 55,
+        "fields": {
+            "exercise": 53,
+            "gif_name": "Горизонтальная_тяга_к_поясу_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 56,
+        "fields": {
+            "exercise": 54,
+            "gif_name": "Вертикальная_тяга_узкий_хват_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 57,
+        "fields": {
+            "exercise": 55,
+            "gif_name": "Вертикальная тяга_широкой_хват_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 58,
+        "fields": {
+            "exercise": 56,
+            "gif_name": "Вертикальная_тяга_обратный_хват_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 59,
+        "fields": {
+            "exercise": 57,
+            "gif_name": "Тяга_Т-грифа_к поясу_широкий_хват_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 60,
+        "fields": {
+            "exercise": 58,
+            "gif_name": "Тяга_Т-грифа_к_поясу_узкий_хват_(тренажер).gif"
+        }
+    },
+     {
+        "model": "workouts.exercisegif",
+        "pk": 61,
+        "fields": {
+            "exercise": 59,
+            "gif_name": "Классический_подъем_на_бицепс_стоя_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 62,
+        "fields": {
+            "exercise": 60,
+            "gif_name": "Подъем_на бицепс_с_супинацией_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 63,
+        "fields": {
+            "exercise": 61,
+            "gif_name": "Подъем_на_бицепс_сидя_с упором_в_бедро_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 64,
+        "fields": {
+            "exercise": 62,
+            "gif_name": "Сгибания_рук_в_упоре_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 65,
+        "fields": {
+            "exercise": 63,
+            "gif_name": "Подъем_на_бицепс_сидя_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 66,
+        "fields": {
+            "exercise": 64,
+            "gif_name": "Подъем_на_бицепс_с_упором_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 67,
+        "fields": {
+            "exercise": 65,
+            "gif_name": "Французский_жим_стоя_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 68,
+        "fields": {
+            "exercise": 66,
+            "gif_name": "Французский_жим_сидя_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 69,
+        "fields": {
+            "exercise": 67,
+            "gif_name": "Французский_жим_лежа_2_(гантеляи).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 70,
+        "fields": {
+            "exercise": 68,
+            "gif_name": "Разгибание_руки_из-за_головы_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 71,
+        "fields": {
+            "exercise": 69,
+            "gif_name": "Разгибание_руки_в_наклоне_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 72,
+        "fields": {
+            "exercise": 70,
+            "gif_name": "Подъем_на бицепс_обратным_хватом_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 73,
+        "fields": {
+            "exercise": 71,
+            "gif_name": "Упражнение_«молоток»_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 74,
+        "fields": {
+            "exercise": 72,
+            "gif_name": "Подъем_с_упором_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 75,
+        "fields": {
+            "exercise": 73,
+            "gif_name": "Узкие_отжимания_(трицепс)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 76,
+        "fields": {
+            "exercise": 74,
+            "gif_name": "Разгибания_рук_в_обратной_пленке_(трицепс)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 77,
+        "fields": {
+            "exercise": 75,
+            "gif_name": "Отжимания_спиной_к _опоре_(трицепс)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 78,
+        "fields": {
+            "exercise": 76,
+            "gif_name": "Сгибания_на_бицепс_(резиновы_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 79,
+        "fields": {
+            "exercise": 77,
+            "gif_name": "Сгибания_на_бицепс_поочередно_каждой_рукой_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 80,
+        "fields": {
+            "exercise": 78,
+            "gif_name": "Сгибания_на_бицепс_в_наклоне_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 81,
+        "fields": {
+            "exercise": 79,
+            "gif_name": "Сгибания_на_бицепс_в_наклоне_одной_рукой_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 82,
+        "fields": {
+            "exercise": 80,
+            "gif_name": "Молотковые_сгибания_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 83,
+        "fields": {
+            "exercise": 81,
+            "gif_name": "Молотковые_сгибания_одной_рукой_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 84,
+        "fields": {
+            "exercise": 82,
+            "gif_name": "Молотковые_сгибания_в_наклоне_(резиновые_петли_.gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 85,
+        "fields": {
+            "exercise": 83,
+            "gif_name": "Разгибания_из-за_головы_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 86,
+        "fields": {
+            "exercise": 84,
+            "gif_name": "Разгибания_из-за_плеч_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 87,
+        "fields": {
+            "exercise": 85,
+            "gif_name": "Разгибания_руки_в_наклоне_(резиновые_петли).gif"
+        }
+    },
+        {
+        "model": "workouts.exercisegif",
+        "pk": 88,
+        "fields": {
+            "exercise": 86,
+            "gif_name": "Разгибания_руки_(фитнес_резинка).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 89,
+        "fields": {
+            "exercise": 87,
+            "gif_name": "Сгибания_на_бицепс_(резиновы_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 90,
+        "fields": {
+            "exercise": 88,
+            "gif_name": "Тяга_обратным_хватом_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 91,
+        "fields": {
+            "exercise": 89,
+            "gif_name": "Подъем_на_бицепс_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 92,
+        "fields": {
+            "exercise": 90,
+            "gif_name": "Подъем_на_бицепс_с_упором_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 93,
+        "fields": {
+            "exercise": 91,
+            "gif_name": "Жим_лежа_узким_хватом_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 94,
+        "fields": {
+            "exercise": 92,
+            "gif_name": "Французский_жим_лежа_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 95,
+        "fields": {
+            "exercise": 93,
+            "gif_name": "Французский_жим_сидя_(трицепс)_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 96,
+        "fields": {
+            "exercise": 94,
+            "gif_name": "Французский_жим_стоя_(трицепс)_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 97,
+        "fields": {
+            "exercise": 95,
+            "gif_name": "Подъем_на_бицепс_обратным_хватом_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 98,
+        "fields": {
+            "exercise": 96,
+            "gif_name": "Сгибания_рук_(trx).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 99,
+        "fields": {
+            "exercise": 97,
+            "gif_name": "Разгибания_рук_(trx).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 100,
+        "fields": {
+            "exercise": 98,
+            "gif_name": "Аналог_отжимания_на_брусьях_(trx).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 101,
+        "fields": {
+            "exercise": 99,
+            "gif_name": "Подтягивания_обратным_хватом_(турник).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 102,
+        "fields": {
+            "exercise": 100,
+            "gif_name": "Подтягивания_параллельным_хватом_(турник).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 103,
+        "fields": {
+            "exercise": 101,
+            "gif_name": "Отжимания_узким_хватом_(брусья).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 104,
+        "fields": {
+            "exercise": 102,
+            "gif_name": "Сгибания_рук_сидя_(бицепс)_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 105,
+        "fields": {
+            "exercise": 103,
+            "gif_name": "Сгибания_рук_с_упором_(бицепс)_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 106,
+        "fields": {
+            "exercise": 104,
+            "gif_name": "Классические_сгибания_(бицепс)_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 107,
+        "fields": {
+            "exercise": 105,
+            "gif_name": "Горизонтальный_жим_сидя_(трицепс)_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 108,
+        "fields": {
+            "exercise": 106,
+            "gif_name": "Отжимания_на_брусьях_в_гравитроне_(трицепс)_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 109,
+        "fields": {
+            "exercise": 107,
+            "gif_name": "Разгибания_рук_поочередно_(трицепс)_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 110,
+        "fields": {
+            "exercise": 108,
+            "gif_name": "Классические_разгибания_рук_(трицепс)_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 111,
+        "fields": {
+            "exercise": 109,
+            "gif_name": "Разгибания_рук_с_канатной_рукояткой_(трицепс)_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 112,
+        "fields": {
+            "exercise": 110,
+            "gif_name": "Сгибания_рук_верхним_хватом_(предплечье)_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 113,
+        "fields": {
+            "exercise": 111,
+            "gif_name": "Сгибания_рук_верхним_хватом_стоя_(предплечье)_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 114,
+        "fields": {
+            "exercise": 112,
+            "gif_name": "Приседания_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 115,
+        "fields": {
+            "exercise": 113,
+            "gif_name": "Широкие_приседания_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 116,
+        "fields": {
+            "exercise": 114,
+            "gif_name": "Выпады_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 117,
+        "fields": {
+            "exercise": 115,
+            "gif_name": "Выпады_назад_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 118,
+        "fields": {
+            "exercise": 116,
+            "gif_name": "Болгарские_выпады_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 119,
+        "fields": {
+            "exercise": 117,
+            "gif_name": "Выпады_в_сторону_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 120,
+        "fields": {
+            "exercise": 118,
+            "gif_name": "Шаги_в_сторону_в_полуприседе_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 121,
+        "fields": {
+            "exercise": 119,
+            "gif_name": "Шаги_полу-гуськом_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 122,
+        "fields": {
+            "exercise": 120,
+            "gif_name": "Приседания_с_шагом_в_сторону_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 123,
+        "fields": {
+            "exercise": 121,
+            "gif_name": "Подъем_на_возвышенность_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 124,
+        "fields": {
+            "exercise": 122,
+            "gif_name": "Боковой_подъем_на_возвышенность_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 125,
+        "fields": {
+            "exercise": 123,
+            "gif_name": "Приседания_с_подъемом_бедра_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 126,
+        "fields": {
+            "exercise": 124,
+            "gif_name": "Приседания_со_скручиванем_корпуса_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 127,
+        "fields": {
+            "exercise": 125,
+            "gif_name": "Приседания_с_подъемом_на_носки_(сб.вес).gif"
+        }
+    },
+        {
+        "model": "workouts.exercisegif",
+        "pk": 128,
+        "fields": {
+            "exercise": 126,
+            "gif_name": "Приседания_с_боковым_отведением_ноги_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 129,
+        "fields": {
+            "exercise": 127,
+            "gif_name": "Махи_вверх_стоя_на_четвереньках_(изолированное_упражнение)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 130,
+        "fields": {
+            "exercise": 127,
+            "gif_name": "Махи_вверх_стоя_на_четвереньках_2_(изолированное_упражнение)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 131,
+        "fields": {
+            "exercise": 128,
+            "gif_name": "Махи_ногой_назад_с_упором_на_возвышенности_(изолированное_упражнение)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 132,
+        "fields": {
+            "exercise": 129,
+            "gif_name": "Ягодичный_мостик_(изолированное_упражнение)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 133,
+        "fields": {
+            "exercise": 129,
+            "gif_name": "Ягодичный_мостик_с_опрой_(изолированное_упражнение)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 134,
+        "fields": {
+            "exercise": 130,
+            "gif_name": "Ягодичный_мостик_на_1_ноге_(изолированное_упражнение)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 135,
+        "fields": {
+            "exercise": 131,
+            "gif_name": "Упражнение_«Маятник»_(изолированное_упражнение)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 136,
+        "fields": {
+            "exercise": 132,
+            "gif_name": "Отведение_ноги_в_сторону_на_четвереньках_(изолированное_упражнение)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 137,
+        "fields": {
+            "exercise": 133,
+            "gif_name": "ТДотягивания_до_возвашенности_(изолированное_упражнение)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 138,
+        "fields": {
+            "exercise": 134,
+            "gif_name": "Отведени_ноги_в_сторону_лежа_(внешняя_часть_бедра)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 139,
+        "fields": {
+            "exercise": 135,
+            "gif_name": "Круговое_вращение_ногой_лежа_на_боку_(внешняя_часть_бедра)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 140,
+        "fields": {
+            "exercise": 136,
+            "gif_name": "Приведение_бедра_лежа_на_боку_(внутренняя_часть_бедра)_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 141,
+        "fields": {
+            "exercise": 137,
+            "gif_name": "Приседания_с_гантелями_в_руках_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 142,
+        "fields": {
+            "exercise": 138,
+            "gif_name": "Широкие_приседания_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 143,
+        "fields": {
+            "exercise": 139,
+            "gif_name": "Приседание_с_гантелей_на_груди_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 144,
+        "fields": {
+            "exercise": 140,
+            "gif_name": "Выпады_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 145,
+        "fields": {
+            "exercise": 141,
+            "gif_name": "Выпады_назад_с_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 146,
+        "fields": {
+            "exercise": 142,
+            "gif_name": "Болгарские_выпады_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 147,
+        "fields": {
+            "exercise": 143,
+            "gif_name": "Мертвая_тяга_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 148,
+        "fields": {
+            "exercise": 144,
+            "gif_name": "Подъем_на_носки_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 149,
+        "fields": {
+            "exercise": 145,
+            "gif_name": "Приседания(фитнес_резинка).giff"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 150,
+        "fields": {
+            "exercise": 146,
+            "gif_name": "Приседания_с_махом_ногой_(фитнес_резинка).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 151,
+        "fields": {
+            "exercise": 147,
+            "gif_name": "Приседания_с_отведением_ноги_назад_(фитнес_резинка).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 152,
+        "fields": {
+            "exercise": 148,
+            "gif_name": "Приседания_с_отведением_ноги_в_сторону_(фитнес_резинка).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 153,
+        "fields": {
+            "exercise": 149,
+            "gif_name": "Ходьба_в_сторону_(фитнес_резинка).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 154,
+        "fields": {
+            "exercise": 149,
+            "gif_name": "Ходьба_в_сторону_(упрощенный)_(фитнес_резинка).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 155,
+        "fields": {
+            "exercise": 150,
+            "gif_name": "Ходьба_в_строну_с_приседаниями_(фитнес_резинка).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 156,
+        "fields": {
+            "exercise": 151,
+            "gif_name": "Махи_ногой_лежа_на_боку_(фитнес_резинка).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 157,
+        "fields": {
+            "exercise": 152,
+            "gif_name": "Отведение_ноги_в_сторону_стоя_(фитнес_резинка).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 158,
+        "fields": {
+            "exercise": 153,
+            "gif_name": "Сгибания_ног_лежа_(фитнес_резинка).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 159,
+        "fields": {
+            "exercise": 154,
+            "gif_name": "Приседания_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 160,
+        "fields": {
+            "exercise": 155,
+            "gif_name": "Выпады_(резиновые_петли).gif"
+        }
+    },
+     {
+        "model": "workouts.exercisegif",
+        "pk": 161,
+        "fields": {
+            "exercise": 156,
+            "gif_name": "Мертвая_тяга_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 162,
+        "fields": {
+            "exercise": 157,
+            "gif_name": "Отведение_ноги_на_четвереньках_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 163,
+        "fields": {
+            "exercise": 158,
+            "gif_name": "Опускание_ноги_лежа_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 164,
+        "fields": {
+            "exercise": 159,
+            "gif_name": "Жим_одной_ногой_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 165,
+        "fields": {
+            "exercise": 160,
+            "gif_name": "Приседания(trx).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 166,
+        "fields": {
+            "exercise": 161,
+            "gif_name": "Выпады_(trx).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 167,
+        "fields": {
+            "exercise": 162,
+            "gif_name": "Выпады_в_сторону_(trx).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 168,
+        "fields": {
+            "exercise": 163,
+            "gif_name": "Конькобежец_(trx).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 169,
+        "fields": {
+            "exercise": 164,
+            "gif_name": "Выпады_назад_с_подъемом_бедра_(trx).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 170,
+        "fields": {
+            "exercise": 165,
+            "gif_name": "Выпады_с_выпрыгиванием_(trx).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 171,
+        "fields": {
+            "exercise": 166,
+            "gif_name": "Выпады_с_разножкой_(trx).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 172,
+        "fields": {
+            "exercise": 167,
+            "gif_name": "Приседания_с_прыжком_(trx).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 173,
+        "fields": {
+            "exercise": 168,
+            "gif_name": "УВыпады_на_одной_ноге_(trx).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 174,
+        "fields": {
+            "exercise": 169,
+            "gif_name": "Приседания_на_одной_ноге_(trx).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 175,
+        "fields": {
+            "exercise": 170,
+            "gif_name": "Приседания_со_штангой_на_плечах_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 176,
+        "fields": {
+            "exercise": 171,
+            "gif_name": "Широкие_приседания_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 177,
+        "fields": {
+            "exercise": 172,
+            "gif_name": "Выпады_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 178,
+        "fields": {
+            "exercise": 173,
+            "gif_name": "Выпады_назад_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 179,
+        "fields": {
+            "exercise": 174,
+            "gif_name": "Выпады_на_месте_(штанга).giff"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 180,
+        "fields": {
+            "exercise": 175,
+            "gif_name": "Мертвая_тяга_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 181,
+        "fields": {
+            "exercise": 176,
+            "gif_name": "Наклоны_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 182,
+        "fields": {
+            "exercise": 177,
+            "gif_name": "Становая_тяга_«сумо»_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 183,
+        "fields": {
+            "exercise": 178,
+            "gif_name": "Подъем_на_носки_стоя_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 184,
+        "fields": {
+            "exercise": 179,
+            "gif_name": "Жим_ногами_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 185,
+        "fields": {
+            "exercise": 180,
+            "gif_name": "Разгибания_ног_(квадрицепс)_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 186,
+        "fields": {
+            "exercise": 181,
+            "gif_name": "Сгибания_ног_(бицепс_бедра)_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 187,
+        "fields": {
+            "exercise": 182,
+            "gif_name": "Разведение_ног_(малая_ягодичная_мышца)_(тренажер).gif"
+        }
+    },
+        {
+        "model": "workouts.exercisegif",
+        "pk": 188,
+        "fields": {
+            "exercise": 183,
+            "gif_name": "Отведение_ноги_назад_(ягодицы)_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 189,
+        "fields": {
+            "exercise": 184,
+            "gif_name": "Отведение_ноги_в_сторону_(малая ягодичная, внешняя часть бедер)_(тренажер).gif"
+        }
+    },
+{
+        "model": "workouts.exercisegif",
+        "pk": 190,
+        "fields": {
+            "exercise": 184,
+            "gif_name": "Отжимания_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 191,
+        "fields": {
+            "exercise": 185,
+            "gif_name": "Армейские_отжимания_(сб.вес).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 192,
+        "fields": {
+            "exercise": 186,
+            "gif_name": "Жим_стоя_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 193,
+        "fields": {
+            "exercise": 186,
+            "gif_name": "Жим_сидя_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 194,
+        "fields": {
+            "exercise": 187,
+            "gif_name": "Махи_стоя_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 195,
+        "fields": {
+            "exercise": 187,
+            "gif_name": "Махи_сидя_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 196,
+        "fields": {
+            "exercise": 188,
+            "gif_name": "Тяга_к_подбородку_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 197,
+        "fields": {
+            "exercise": 189,
+            "gif_name": "Жим_Арнольда_стоя(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 198,
+        "fields": {
+            "exercise": 189,
+            "gif_name": "Жим_Арнольда_сидя_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 199,
+        "fields": {
+            "exercise": 190,
+            "gif_name": "Махи_перед_собой_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 200,
+        "fields": {
+            "exercise": 191,
+            "gif_name": "Махи_в_наклоне_(гантели).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 201,
+        "fields": {
+            "exercise": 192,
+            "gif_name": "Жим_стоя_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 202,
+        "fields": {
+            "exercise": 192,
+            "gif_name": "Жим_сидя_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 203,
+        "fields": {
+            "exercise": 193,
+            "gif_name": "Жим_из-за_головы_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 204,
+        "fields": {
+            "exercise": 194,
+            "gif_name": "Тяга_к_подбородку_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 205,
+        "fields": {
+            "exercise": 195,
+            "gif_name": "Подъем_перед_собой_(штанга).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 206,
+        "fields": {
+            "exercise": 196,
+            "gif_name": "Жим_двумя_руками_стоя_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 207,
+        "fields": {
+            "exercise": 196,
+            "gif_name": "Жим_поочередно_стоя_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 208,
+        "fields": {
+            "exercise": 197,
+            "gif_name": "Жим_из-за_головы_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 209,
+        "fields": {
+            "exercise": 198,
+            "gif_name": "Отведение_поочередно_в_сторону_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 210,
+        "fields": {
+            "exercise": 199,
+            "gif_name": "Тяга_к_подбородку_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 211,
+        "fields": {
+            "exercise": 200,
+            "gif_name": "Разведения_стоя_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 212,
+        "fields": {
+            "exercise": 201,
+            "gif_name": "Махи_перед_собой_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 213,
+        "fields": {
+            "exercise": 202,
+            "gif_name": "Тяга_в_наклоне_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 214,
+        "fields": {
+            "exercise": 203,
+            "gif_name": "Отведение_в наклоне_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 215,
+        "fields": {
+            "exercise": 204,
+            "gif_name": "Разведение_в стороны_стоя_(резиновые_петли).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 216,
+        "fields": {
+            "exercise": 205,
+            "gif_name": "Жим_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 217,
+        "fields": {
+            "exercise": 206,
+            "gif_name": "Жим_в_машине_Смитта_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 218,
+        "fields": {
+            "exercise": 207,
+            "gif_name": "Жим_в_машине_Смитта_из-за_головы_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 219,
+        "fields": {
+            "exercise": 208,
+            "gif_name": "Поочередное_отведение_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 220,
+        "fields": {
+            "exercise": 209,
+            "gif_name": "Разведения_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 221,
+        "fields": {
+            "exercise": 210,
+            "gif_name": "Разведения_в_кроссовере_(тренажер).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 222,
+        "fields": {
+            "exercise": 211,
+            "gif_name": "Касание_пяток_сидя_(новичок).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 223,
+        "fields": {
+            "exercise": 212,
+            "gif_name": "Дотягивания_до_щиколоток_(новичок).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 224,
+        "fields": {
+            "exercise": 213,
+            "gif_name": "Упрощенный_велосипед_(новичок).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 225,
+        "fields": {
+            "exercise": 214,
+            "gif_name": "Скручивания_стоя_(новичок).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 226,
+        "fields": {
+            "exercise": 215,
+            "gif_name": "(Русский_твистер_(новичок).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 227,
+        "fields": {
+            "exercise": 216,
+            "gif_name": "Обратные_скручивания_с_согнутыми_ногами_(новичок).gif"
+        }
+    },
+        {
+        "model": "workouts.exercisegif",
+        "pk": 228,
+        "fields": {
+            "exercise": 217,
+            "gif_name": "Скручивания_(средний).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 229,
+        "fields": {
+            "exercise": 218,
+            "gif_name": "Косые_скручивания_(средний).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 230,
+        "fields": {
+            "exercise": 219,
+            "gif_name": "Косые_скручивания_с_подносом_колена_(средний).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 231,
+        "fields": {
+            "exercise": 220,
+            "gif_name": "Косые_скручивания_с_велосипедом_(средний).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 232,
+        "fields": {
+            "exercise": 221,
+            "gif_name": "Обратные_скручивания_(средний).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 133,
+        "fields": {
+            "exercise": 222,
+            "gif_name": "Скручивания_с_подъемом_ног_(средний).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 234,
+        "fields": {
+            "exercise": 223,
+            "gif_name": "Велосипед_(средний).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 235,
+        "fields": {
+            "exercise": 224,
+            "gif_name": "Маятник_(средний).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 236,
+        "fields": {
+            "exercise": 225,
+            "gif_name": "Вертикальные_ножницы_(средний).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 237,
+        "fields": {
+            "exercise": 226,
+            "gif_name": "Горизонтальные_ножницы_(средний).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 238,
+        "fields": {
+            "exercise": 227,
+            "gif_name": "Звезда_(средний).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 239,
+        "fields": {
+            "exercise": 228,
+            "gif_name": "Косой_поднос_колена_в_упоре_(средний).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 240,
+        "fields": {
+            "exercise": 229,
+            "gif_name": "Опускание_ног_(средний).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 241,
+        "fields": {
+            "exercise": 230,
+            "gif_name": "Косые_скручивания_с_поднятой_ногой_(средний).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 242,
+        "fields": {
+            "exercise": 231,
+            "gif_name": "Скручивания_лежа_на_боку_(средний).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 243,
+        "fields": {
+            "exercise": 232,
+            "gif_name": "Раскладушка_(средний).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 244,
+        "fields": {
+            "exercise": 233,
+            "gif_name": "Косые_скручивания_в_упоре_с_касанием_колена_(эксперт).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 245,
+        "fields": {
+            "exercise": 234,
+            "gif_name": "Косые_скручивания_в_боковой_планке_(эксперт).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 246,
+        "fields": {
+            "exercise": 235,
+            "gif_name": "Подъем_таза_в_боковой_планке_(эксперт).gif"
+        }
+    },
+    {
+        "model": "workouts.exercisegif",
+        "pk": 247,
+        "fields": {
+            "exercise": 236,
+            "gif_name": "Приведение_локтя_в_боковой_планке_(эксперт).gif"
         }
     }
 ]

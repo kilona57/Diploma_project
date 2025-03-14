@@ -54,5 +54,12 @@
         "fields": {
             "name": "TRX"
         }
+    },
+    {
+        "model": "workouts.equipment",
+        "pk": 9,
+        "fields": {
+            "name": "Тренажер"
+        }
     }
 ]

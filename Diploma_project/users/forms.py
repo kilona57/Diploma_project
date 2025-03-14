@@ -38,7 +38,7 @@ class RegisterForm(UserCreationForm):
 class UserProfileForm(forms.ModelForm):
     gender = forms.ModelChoiceField(required=True,
                                     queryset=Gender.objects.all(),
-                                    initial=Gender.objects.get(code='M'),
+                                    # initial=Gender.objects.get(code='M'),
                                     label='Пол')
 
     date_of_birth = forms.DateField(required=True,
@@ -55,22 +55,22 @@ class UserProfileForm(forms.ModelForm):
                                       label='Желаемый вес')
     activity_type = forms.ModelChoiceField(required=True,
                                            queryset=ActivityType.objects.all(),
-                                           initial=ActivityType.objects.get(name="Слегка активный"),
+                                           # initial=ActivityType.objects.get(name="Слегка активный"),
                                            widget=forms.Select(),
                                            label='Насколько вы активны?')
     type_food = forms.ModelChoiceField(required=True,
                                        queryset=TypeFood.objects.all(),
-                                       initial=TypeFood.objects.get(name="Классический"),
+                                       # initial=TypeFood.objects.get(name="Классический"),
                                        widget=forms.Select(),
                                        label='Вы хотите придерживаться какого-то определенного типа питания?')
     main_goal = forms.ModelChoiceField(required=True,
                                        queryset=MainGoal.objects.all(),
-                                       initial=MainGoal.objects.get(name="Похудение"),
+                                       # initial=MainGoal.objects.get(name="Похудение"),
                                        widget=forms.Select(),
                                        label='Какова ваша главная цель?')
     additional_goal = forms.ModelMultipleChoiceField(required=True,
                                              queryset=AdditionalGoal.objects.all(),
-                                             initial=AdditionalGoal.objects.get(name="Улучшить взаимоотношения с едой"),
+                                             # initial=AdditionalGoal.objects.get(name="Улучшить взаимоотношения с едой"),
                                              widget=forms.CheckboxSelectMultiple(),
                                              label='У вас есть еще какие-то цели?')
 
