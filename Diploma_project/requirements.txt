@@ -4,3 +4,5 @@ pip==25.0.1
 psycopg2-binary==2.9.10
 sqlparse==0.5.3
 tzdata==2025.1
+openai==1.65.2
+
