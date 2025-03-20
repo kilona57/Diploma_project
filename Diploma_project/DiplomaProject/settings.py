@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'users',
-    'workouts'
+    'workouts',
 ]
 
 MIDDLEWARE = [
@@ -137,5 +137,5 @@ LOGIN_URL = '/login/'  # URL для перенаправления неауте�
 LOGIN_REDIRECT_URL = '/edit_profile/'
 LOGOUT_REDIRECT_URL = '/'
 
-AI_TOKEN = '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'
+AI_TOKEN = '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'
 

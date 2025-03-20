@@ -1,4 +1,5 @@
 from django.db import models
+from users.models import CustomUser
 
 
 class MuscleGroup(models.Model):
@@ -95,3 +96,92 @@ class ExerciseGif(models.Model):
     class Meta:
         verbose_name = "GIF-изображение"
         verbose_name_plural = "GIF-изображения"
+
+
+class TypeOfWorkout(models.Model):
+    name = models.CharField(
+        max_length=255,
+        verbose_name="Тип тренировки",
+        unique=True,
+    )
+
+    def __str__(self):
+        return f"Тип тренировки: {self.name}"
+
+    class Meta:
+        verbose_name = "Тип тренировки"
+        verbose_name_plural = "Типы тренировок"
+
+
+class DayNumber(models.Model):
+    name = models.CharField(
+        max_length=255,
+        verbose_name="Номер дня",
+        unique=True,
+    )
+
+    def __str__(self):
+        return f"{self.name}"
+
+    class Meta:
+        verbose_name = "День тренировки"
+        verbose_name_plural = "Дни тренеровок"
+
+
+class Training(models.Model):
+    user = models.ForeignKey(
+        CustomUser,
+        on_delete=models.CASCADE,
+        verbose_name="Пользователь",
+        related_name="user"
+    )
+    type_of_workout = models.ForeignKey(
+        TypeOfWorkout,
+        on_delete=models.CASCADE,
+        verbose_name="Тип тренировки",
+        related_name="type_of_workout"
+    )
+
+    def __str__(self):
+        return f"Пользователь: {self.user}, тип тренировки: {self.type_of_workout}"
+
+    class Meta:
+        verbose_name = "Тренировка"
+        verbose_name_plural = "Тренировки"
+
+
+class TrainingSchedule(models.Model):
+    training = models.ForeignKey(
+        Training,
+        on_delete=models.CASCADE,
+        verbose_name="Тренировка",
+        related_name="training"
+    )
+    day_number = models.ForeignKey(
+        DayNumber,
+        on_delete=models.CASCADE,
+        verbose_name="День",
+        related_name="day"
+    )
+    exercise = models.ForeignKey(
+        Exercise,
+        on_delete=models.CASCADE,
+        verbose_name="Упражнение",
+        related_name="exercise"
+    )
+    repeat = models.IntegerField(
+        verbose_name='Количество повторений',
+    )
+    approaches = models.IntegerField(
+        verbose_name='Количество подходов',
+    )
+
+    def __str__(self):
+        return f"День: {self.day_number}, " \
+               f"упражнение: {self.exercise}" \
+               f"количество повторений: {self.repeat}" \
+               f"количество подходов: {self.approaches}"
+
+    class Meta:
+        verbose_name = "Расписание тренировки"
+        verbose_name_plural = "Расписание тренировок"
