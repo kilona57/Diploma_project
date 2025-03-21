@@ -1,0 +1,16 @@
+[
+    {
+        "model": "workouts.typeofworkout",
+        "pk": 1,
+        "fields": {
+            "name": "Пользовательская"
+        }
+    },
+    {
+        "model": "workouts.typeofworkout",
+        "pk": 2,
+        "fields": {
+            "name": "Сгенерированная"
+        }
+    }
+]

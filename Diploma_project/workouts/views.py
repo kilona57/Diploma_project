@@ -1,8 +1,7 @@
 from django.shortcuts import render
 
-
-from workouts.services.data_processing import get_user_data, get_exercises_list, process_ai_response, add_data_to_the_db
-
+from workouts.services.data_processing import get_user_data, get_exercises_list,\
+    process_ai_response, add_ai_training_data_to_the_db
 from workouts.services.generate_ai import ai_generating_training
 
 
@@ -21,5 +20,5 @@ def generate_training(request):
     # обрабатываем ответ ИИ и приветом его к словарю
     ai_data_response = process_ai_response(generated_training)
     # записываем полученные данные в БД
-    add_data_to_the_db(user_id, ai_data_response)
+    add_ai_training_data_to_the_db(user_id, ai_data_response)
     pass

@@ -14,4 +14,6 @@ os.system('python manage.py loaddata muscle_group_fixture.json')
 os.system('python manage.py loaddata equipment_fixture.json')
 os.system('python manage.py loaddata exercises_fixture.json')
 os.system('python manage.py loaddata exercise_gif_fixture.json')
+os.system('python manage.py loaddata day_fixture.json')
+os.system('python manage.py loaddata type_training_fixture.json')
 

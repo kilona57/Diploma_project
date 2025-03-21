@@ -2,7 +2,7 @@ from django.db.models import F
 import json
 
 from users.models import CustomUser, UserProfile
-from workouts.models import Exercise
+from workouts.models import Exercise, TypeOfWorkout, DayNumber, Training, TrainingSchedule
 
 
 def get_user_data(request):
@@ -37,5 +37,20 @@ def process_ai_response(ai_response):
     return data
 
 
-def add_data_to_the_db(user, exercise_data):
-
+def add_ai_training_data_to_the_db(user_id, exercise_data):
+    nutrition = exercise_data['питание']
+    del exercise_data['питание']
+    training = Training.objects.create(
+        user=CustomUser.objects.get(id=user_id),
+        type_of_workout=TypeOfWorkout.objects.get(name='Сгенерированная')
+    )
+    for day, training in exercise_data.items():
+        training = training['тренировка']
+        for i in training:
+            TrainingSchedule.objects.create(
+                training=training,
+                day_number=DayNumber.objects.get(name=day),
+                exercise=Exercise.objects.get(name=i['упражнение']),
+                repeat=i['повторения'],
+                approaches=i['подходы']
+            )
