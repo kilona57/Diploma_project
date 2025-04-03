@@ -1,0 +1,51 @@
+[
+    {
+        "model": "workouts.daynumber",
+        "pk": 1,
+        "fields": {
+            "name": "День 1"
+        }
+    },
+    {
+        "model": "workouts.daynumber",
+        "pk": 2,
+        "fields": {
+            "name": "День 2"
+        }
+    },
+    {
+        "model": "workouts.daynumber",
+        "pk": 3,
+        "fields": {
+            "name": "День 3"
+        }
+    },
+    {
+        "model": "workouts.daynumber",
+        "pk": 4,
+        "fields": {
+            "name": "День 4"
+        }
+    },
+    {
+        "model": "workouts.daynumber",
+        "pk": 5,
+        "fields": {
+            "name": "День 5"
+        }
+    },
+    {
+        "model": "workouts.daynumber",
+        "pk": 6,
+        "fields": {
+            "name": "День 6"
+        }
+    },
+    {
+        "model": "workouts.daynumber",
+        "pk": 7,
+        "fields": {
+            "name": "День 7"
+        }
+    }
+]

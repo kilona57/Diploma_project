@@ -178,6 +178,7 @@ class BodyParameters(models.Model):
     def __str__(self):
         return (f"Параметры тела пользователя {self.user.username}")
 
+
 class NutritionGoals(models.Model):
     user = models.OneToOneField(CustomUser, on_delete=models.CASCADE, related_name='nutrition_goals')
     target_kcal = models.FloatField(verbose_name='Целевые калории (ккал)', null=True, blank=True)
