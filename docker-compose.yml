@@ -16,7 +16,9 @@ services:
       - '5434:5432'
     restart: always
 
-
+# docker ps
+ # docker exec -it postgresql /bin/bash
+ # psql -U postgres -d Diploma -p 5432 -h localhost
 
 
 

@@ -27,7 +27,8 @@ class Equipment(models.Model):
 class Difficulty(models.Model):
     name = models.CharField(max_length=50, verbose_name="Название сложности")
     description = models.TextField(verbose_name="Описание сложности", blank=True, null=True)
-    level = models.PositiveIntegerField(verbose_name="Уровень сложности", help_text="Чем выше число, тем сложнее упражнение")
+    level = models.PositiveIntegerField(verbose_name="Уровень сложности",
+                                        help_text="Чем выше число, тем сложнее упражнение")
 
     def __str__(self):
         return self.name
